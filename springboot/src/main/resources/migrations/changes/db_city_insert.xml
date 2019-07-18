@@ -1,0 +1,22 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="INSERT_CITY_1" author="stas.shilovich@gmail.com">
+        <insert tableName="T_CITY">
+            <column name="F_NAME" value="Порту"/>
+            <column name="F_DESCRIPTION" value="Порту – город на северо-западном побережье Португалии с величественными мостами и винодельнями, где производят портвейн."/>
+        </insert>
+        <insert tableName="T_CITY">
+            <column name="F_NAME" value="Хельсинки"/>
+            <column name="F_DESCRIPTION" value="Хельсинки – столица Финляндии, расположенная в южной части страны на полуострове в Финском заливе."/>
+        </insert>
+        <insert tableName="T_CITY">
+            <column name="F_NAME" value="Рим"/>
+            <column name="F_DESCRIPTION" value="Рим – столица Италии, огромный многонациональный город, история которого насчитывает почти три тысячи лет."/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

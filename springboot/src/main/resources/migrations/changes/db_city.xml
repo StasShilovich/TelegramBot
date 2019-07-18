@@ -1,0 +1,17 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="CITY_TABLE" author="stas.shilovich@gmail.com">
+        <createTable tableName="T_CITY">
+            <column autoIncrement="true" name="F_ID" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="F_NAME" type="VARCHAR(20)"/>
+            <column name="F_DESCRIPTION" type="VARCHAR(200)"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
